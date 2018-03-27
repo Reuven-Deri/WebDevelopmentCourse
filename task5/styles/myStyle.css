@@ -1,0 +1,148 @@
+﻿body {
+    direction: rtl;
+    margin: 0 auto;
+    height: 100%;
+    background-image: url(../images/‏‏bg2.png);
+    background-size: 108%;
+    background-repeat: no-repeat;
+}
+
+#container {
+    /*background-color: #008285;*/
+    width: 58%;
+    margin: 0 auto;
+}
+
+form {
+    text-align:center;
+
+}
+label{
+        display:block;
+     margin-top:10px;
+     font-weight:bold;
+     font-size: large;
+     color: white;
+}
+
+input, textarea {
+    margin-top: 10px;
+    margin: 0 auto;
+    display: block;
+    width:200px;
+    background-color: #64c7c9;
+}
+
+input[placeholder] {
+    text-align: center;
+}
+
+input[type ='checkbox'] {
+    display: inline;
+    margin-top: 10px;
+    width: 25px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+
+    color:white;
+    text-align:center;
+    margin-bottom:10px;
+
+}
+
+h1 {
+    font-size: 80px;
+    text-shadow: 1px 1px 18px #11355E;
+}
+
+h2 {
+    font-size: 28px;
+    text-shadow: 2px 1px 10px #11355E;  
+}
+
+h3 {
+    font-size: large;
+
+}
+
+#graphic{
+    color: orangered;
+}
+
+#code {
+    color: #e66195;
+}
+
+#learning {
+    color: #96b728;
+}
+
+header {
+    width: 80px;
+    height: 55px;
+    background-repeat:no-repeat;
+    background-image: url(../images/HITlogo.png);
+    background-size: 100%;
+    display: inline-block;
+    position:absolute;
+    margin-top:80px;
+
+}
+
+#opening {
+    margin-top: 40px;
+    display: inline-block;
+    width: 92%;
+}
+
+
+#contact {
+    margin-top:20px;
+}
+
+#moreInfo {
+    margin: 0 auto;
+    margin-top:10px;
+    text-align:center;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: i;
+}
+ a:hover 
+ {
+     font-weight: bold;
+     font-size: large;
+ }
+
+input[type=submit]:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.pics {
+    width: 260px;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    margin-right: 15px;
+}
+
+#chais13 {
+    background-image: url(../images/chais13-1.jpg);
+    margin-top: 520px;
+
+}
+
+#chais13-2 {
+    background-image: url(../images/chais13-2.jpg);
+    margin-top: 340px;
+}
