@@ -1,0 +1,360 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>תטמיע-לי סיפורי הצלחה</title>
+    <meta name="description" content=" עמוד אודות באתר תטמיע-לי, כל המידע למעוניינים במשרת הטמעה המציג סיפורי הצלחה של מספר אנשים שהתחילו בתור מטמיעים והיום מבצעים מספר תפקידים מגוון מניהול ועד יישום ואפיון מערכות מידע  " />
+    <meta name="keywords" content="הטמעה, הדרכה, משרות, תפקיד,דרישות תפקיד, חייל משוחרר, תואר ראשון, ניהול,מערכות מידע, סיפורי הצלחהף ליאת בן דןד,יוסי שץ,מור פלס, מטמיע, SAP, מאפיין, HIT,אודות "/>
+    <meta name="author" content="ראובן דרעי, הילה מן" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="icon" href="Images/favicon.png">
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+</head>
+<body onload="susccesPage()">
+    <div id="wrapper">
+        <h4 class="offscreen">תפריט נגישות</h4>
+        <ul class="skip">
+            <li><a accesskey="ד" href="#cont" class="skip">דלג לתוכן העמוד (מקש קיצור ד)</a></li>
+            <li><a accesskey="1" href="index.html" class="skip">עמוד הבית <span>(מקש קיצור 1)</span></a></li>
+            <li><a accesskey="5" href="#menu" class="skip">עבור לתפריט נושאים <span>(מקש קיצור 5)</span></a></li>
+            <li><a accesskey="3" href="siteMap.html" class="skip">מפת אתר <span>(מקש קיצור 3)</span></a></li>
+            <li><a accesskey="7" href="contactUs.html" class="skip">צור קשר <span>(מקש קיצור 7)</span></a></li>
+        </ul>
+    </div>
+    <div id="container" class="container lastContent ">
+        <header>
+            <div class="row">
+                <div class="col-3">
+                    <!-- Character pic  -->
+                </div>
+                <div class="col-6">
+                    <p>
+                        <a href="index.html" id="logoIndex">
+                            <img src="images/logo.png" alt="תטמיע-לי, כל המידע למעוניינים במשרת הטמעה. דף הבית" />
+                        </a>
+                    </p>
+                </div>
+                <div class="col-3">
+                    <nav aria-label="side navigation" role="navigation" id="upperNav">
+                        <ul role="menubar">
+                            <li role="menuitem" class="nav-item" onclick="ChangeColor(event)">
+                                <div id="accessibilityIcon" class="rounded-circle"> </div>
+                                נגישות
+                            </li>
+                            <li role="menuitem" class="nav-item">
+                                <a href="contactUs.html">
+                                    <div id="contactUsIcon" class="rounded-circle"> </div>
+                                    צור קשר
+                                </a>
+                            </li>
+                            <li role="menuitem" class="nav-item">
+                                <a href="about.html">
+                                    <div id="aboutIcon" class="rounded-circle"> </div>
+                                    אודות
+                                </a>
+                            </li>
+                            <li role="menuitem" class="nav-item">
+                                <a href="siteMap.html">
+                                    <div id="siteMapIcon" class="rounded-circle"> </div>
+                                    מפת אתר
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+
+                </div>
+            </div>
+
+            <div id="menu" class="backgroundForText textPage topMargin">
+                <nav aria-label="main navigation" role="navigation">
+                    <ul role="menubar" class="nav justify-content-center">
+                        <!-- OnClick בשביל הנגישות ששם אין מעבר עכבר   -->
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="infoSystem" class="rounded-circle"></div>
+                            <div id="infoA" class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">מערכות מידע</a>
+                            <ul role="menubar" class="nav" id="test">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#"> תחום מערכות מידע</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">מהי הטמעה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="job" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">תפקיד המטמיע</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link" href="jobRequirements.html">דרישות תפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link" href="pointOfViews.html">תפיסת תפקיד המטמיע</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="advantages" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">יתרונות בהטמעה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">יתרונות התפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link active" href="success.html">סיפורי הצלחה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="preparation" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">הכנה לתפקיד</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link " href="fqa.html"> שאלות תשובות</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">פורום</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="interesting" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">מעוניין במשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">דרישות שכר</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">חיפוש משרה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="training" class="rounded-circle"> </div>
+                            <a href="#" class="NavHeadline">תהליך הכשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link notActive" href="#">תהליכי הכשרה</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div><span class="arrow-margin_left"></span> <span class="arrow-margin_right"></span></div>
+
+        </header>
+
+
+        <div id="cont"class="backgroundForText topMargin ">
+            <nav class="breadcrumbs">
+                <ul>
+                    <li> <a href="index.html">דף הבית</a> </li>
+                    <li> <a href="" class="notActive"> יתרונות בהטמעה</a></li>
+                    <li> סיפורי הצלחה</li>
+                </ul>
+            </nav>
+            <div class="marginFromRight  ">
+
+                <section id="success_section" role="region">
+                    <h1>סיפורי הצלחה</h1>
+                    <p>
+                        סיפורי ההצלחה של אנשים שהתחילו כמטמיעים והתקדמו בעולם מערכות המידע
+                    </p>
+                    <p class="boldText text-center">לחץ על שם תיק העובד שמעניין אותך</p>
+                </section>
+                <div id="folder">
+                    <ul id="folder_tabs" class="GveretLevin_FONT">
+                        <li class="text-center boldText">
+                            <a href="#folder" onclick="PickFolder(event)" onmouseover="ShowFolder(event)" onmouseout="DontShowFolder(event)" id="0li">אדר חיים</a>
+                        </li>
+                        <li class="text-center boldText">
+                            <a href="#folder" onclick="PickFolder(event)" onmouseover="ShowFolder(event)" onmouseout="DontShowFolder(event)" id="1li">אייל מדמוני</a>
+                        </li>
+                        <li class="text-center boldText">
+                            <a href="#folder" onclick="PickFolder(event)" onmouseover="ShowFolder(event)" onmouseout="DontShowFolder(event)" id="2li">יוסי שץ</a>
+                        </li>
+                        <li class="text-center boldText">
+                            <a href="#folder" onclick="PickFolder(event)" onmouseover="ShowFolder(event)" onmouseout="DontShowFolder(event)" id="3li">ליאת בן דוד</a>
+                        </li>
+                        <li class="text-center boldText">
+                            <a href="#folder" onclick="PickFolder(event)" onmouseover="ShowFolder(event)" onmouseout="DontShowFolder(event)" id="4li">מור פלס</a>
+                        </li>
+                    </ul>
+                    <div id="folderDesign" class="folder_close">
+                        <!-- 0 -->
+                        <div id="0FolderHover" class="row no-activePov folder_hover">
+                            <div class="col-1"></div>
+                            <div class="col-4 success_pic">
+                                <img src="images/hadar.jpeg" alt="אדר חיים" />
+                            </div>
+                            <div class="col-7">
+                                <h2>אדר חיים</h2>
+                                <p class="p_Job_title_now">
+                                    ראש צוות הדרכה בחברת NESS
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 1 -->
+                        <div id="1FolderHover" class="row no-activePov folder_hover">
+                            <div class="col-1"></div>
+                            <div class="col-4 success_pic">
+                                <img src="images/eyalMadmoni.jpeg" alt="איל מדמוני" />
+                            </div>
+                            <div class="col-7">
+                                <h2>אייל מדמוני</h2>
+                                <p class="p_Job_title_now">
+                                    PMO בחברת NESS טכנולוגיות
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div id="2FolderHover" class="row no-activePov folder_hover">
+                            <div class="col-1"></div>
+                            <div class="col-4 success_pic">
+                                <img src="images/yossi.jpg" alt="יוסי שץ" />
+                            </div>
+                            <div class="col-7">
+                                <h2>יוסי שץ</h2>
+                                <p class="p_Job_title_now">
+                                    מיישם SAP בחברת נס טכנולוגיות,  <br />פרויקט של חברת החשמל.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div id="3FolderHover" class="row no-activePov folder_hover">
+                            <div class="col-1"></div>
+                            <div class="col-4 success_pic">
+                                <img src="images/liat.png" alt="ליאת בן דוד" />
+                            </div>
+                            <div class="col-7">
+                                <h2>ליאת בן דוד</h2>
+                                <p class="p_Job_title_now">
+                                    מנהלת פרוייקטי הדרכה בחברת NESS טכנולוגיות
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div id="4FolderHover" class="row no-activePov folder_hover">
+                            <div class="col-1"></div>
+                            <div class="col-4 success_pic">
+                                <img src="images/mor.jpg" alt="מור פלס" />
+                            </div>
+                            <div class="col-7">
+                                <h2>מור פלס</h2>
+                                <p class="p_Job_title_now">
+                                    מדריך SAP בחברת הפניקס ביטוח
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="FolderOpen" class="row no-activePov">
+
+                            <div class="col-5 success_pic_liitle row">
+                                <div class="col-4">
+                                    <img src="" id="employe_pic" alt="תמונה של העובד">
+                                </div>
+                                <div class="col-7">
+                                    <p id="employe_name" class="boldText"></p>
+                                    <p id="employe_job_now"></p>
+                                </div>
+                                <div class="padding_right_suscces" id="">
+                                    <p class="info_succses boldText">מה תרצה לראות אודות העובד?</p>
+                                    <div class="button_succes">
+                                        <button type="button" class="btn " onmouseover="ButtonInfo(event)" onmouseout="ButtonInfoOut(event)" onclick="ButtonInfo(event), ClickOrNot(event)" id="0btn">השכלה </button>
+                                        <button type="button" class="btn" onmouseover="ButtonInfo(event)" onmouseout="ButtonInfoOut(event)" onclick="ButtonInfo(event), ClickOrNot(event)" id="1btn">תפקיד ראשון </button>
+                                        <button type="button" class="btn " onmouseover="ButtonInfo(event)" onmouseout="ButtonInfoOut(event)" onclick="ButtonInfo(event), ClickOrNot(event)" id="2btn">שלבי התקדמות</button>
+                                        <button type="button" class="btn" onmouseover="ButtonInfo(event)" onmouseout="ButtonInfoOut(event)" onclick="ButtonInfo(event), ClickOrNot(event)" id="3btn">נקודת מבט על התפקיד</button>
+                                        <button type="button" class="btn" onmouseover="ButtonInfo(event)" onmouseout="ButtonInfoOut(event)" onclick="ButtonInfo(event), ClickOrNot(event)" id="4btn">יתרונות וחסרונות בתפקיד</button>
+                                        <button type="button" class="btn" onmouseover="ButtonInfo(event)" onmouseout="ButtonInfoOut(event)" onclick="ButtonInfo(event), ClickOrNot(event)" id="5btn">טיפ להצלחה </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 padding_right_suscces2">
+                                <button id="exitBtnSucces" class="btn exit MyBtn " onclick=" ExitFolder(event)"> X</button>
+                                <h3 id="info_header" class="boldText"></h3>
+                                <p id="info_content"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div><span class="arrow-margin_left"></span> <span class="arrow-margin_right"></span></div>
+
+    </div>
+
+
+    <footer>
+        <div id="line" class="container"></div>
+        <div class="container">
+            <div class="row">
+                <div class=" col-3">
+                    <img id="footer_logo" src="images/logo.png" alt="תטמיע-לי, כל המידע למעוניינים במשרת הטמעה" />
+                    <p class="credit">@ מתן קרדיט זכויות יוצרים בעמוד <a href="about.html">אודות</a></p>
+                </div>
+                <nav aria-label="footer navigation" role="navigation" id="navFooter" class="col-9">
+                    <ul role="menubar" class="nav justify-content-around">
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">מערכות מידע</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">תחום מערכות מידע</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">מהי הטמעה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">תפקיד המטמיע</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link" href="jobRequirements.html">דרישות תפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link" href="pointOfViews.html">תפיסת תפקיד המטמיע</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline"> יתרונות בהטמעה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">יתרונות התפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link active" href="success.html">סיפורי הצלחה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">  הכנה לתפקיד</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link " href="fqa.html"> שאלות תשובות</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">פורום</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline"> מעוניין במשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">דרישות שכר</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">חיפוש משרה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">  תהליך הכשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">תהליכי הכשרה</a></li>
+                            </ul>
+                        </li>
+
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline"> על האתר</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link" href="contactUs.html">צור קשר</a></li>
+                                <li role="menuitem"><a class="nav-link" href="about.html">אודות</a></li>
+                                <li role="menuitem"><a class="nav-link" href="siteMap.html">מפת אתר</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </nav>
+
+
+            </div>
+
+    </footer>
+
+</body>
+</html>

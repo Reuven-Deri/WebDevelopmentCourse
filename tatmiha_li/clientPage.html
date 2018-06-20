@@ -1,0 +1,375 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>תטמיע-לי תפיסת תפקיד המטמיע, לקוח</title>
+    <meta name="description" content="עמוד מהו מטמיע מנקודות מבט שונות באתר תטמיע-לי, כל המידע למעוניינים במשרת הטמעה " />
+    <meta name="keywords" content="הטמעה, הדרכה, משרות, תפקיד,דרישות תפקיד, חייל משוחרר, תואר ראשון, ניהול,מערכות מידע, משרות חמות, פיתוח הדרכה, מטמיע מערכות מידע, צור קשר, טלפון, מייל, אימייל, דואל "/>
+    <meta name="author" content="ראובן דרעי, הילה מן" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="icon" href="Images/favicon.png">
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <h4 class="offscreen">תפריט נגישות</h4>
+        <ul class="skip">
+            <li><a accesskey="ד" href="#cont" class="skip">דלג לתוכן העמוד (מקש קיצור ד)</a></li>
+            <li><a accesskey="1" href="index.html" class="skip">עמוד הבית <span>(מקש קיצור 1)</span></a></li>
+            <li><a accesskey="5" href="#menu" class="skip">עבור לתפריט נושאים <span>(מקש קיצור 5)</span></a></li>
+            <li><a accesskey="3" href="siteMap.html" class="skip">מפת אתר <span>(מקש קיצור 3)</span></a></li>
+            <li><a accesskey="7" href="contactUs.html" class="skip">צור קשר <span>(מקש קיצור 7)</span></a></li>
+        </ul>
+    </div>
+    <div id="container" class="container lastContent">
+        <header>
+            <div class="row">
+                <div class="col-3">
+                    <!-- Character pic  -->
+                </div>
+                <div class="col-6">
+                    <p>
+                        <a href="index.html" id="logoIndex">
+                            <img src="images/logo.png" alt="תטמיע-לי, כל המידע למעוניינים במשרת הטמעה. דף הבית" />
+                        </a>
+                    </p>
+                </div>
+                <div class="col-3">
+                    <nav aria-label="side navigation" role="navigation" id="upperNav">
+                        <ul role="menubar">
+                            <li role="menuitem" class="nav-item" onclick="ChangeColor(event)">
+                                <div id="accessibilityIcon" class="rounded-circle"> </div>
+                                נגישות
+                            </li>
+                            <li role="menuitem" class="nav-item">
+                                <a href="contactUs.html">
+                                    <div id="contactUsIcon" class="rounded-circle"> </div>
+                                    צור קשר
+                                </a>
+                            </li>
+                            <li role="menuitem" class="nav-item">
+                                <a href="about.html">
+                                    <div id="aboutIcon" class="rounded-circle"> </div>
+                                    אודות
+                                </a>
+                            </li>
+                            <li role="menuitem" class="nav-item">
+                                <a href="siteMap.html">
+                                    <div id="siteMapIcon" class="rounded-circle"> </div>
+                                    מפת אתר
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                </div>
+            </div>
+
+            <div id="menu" class="backgroundForText topMargin textPage">
+                <nav aria-label="main navigation" role="navigation">
+                    <ul role="menubar" class="nav justify-content-center">
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="infoSystem" class="rounded-circle"></div>
+                            <div id="infoA" class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">מערכות מידע</a>
+                            <ul role="menubar" class="nav" id="test">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#"> תחום מערכות מידע</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">מהי הטמעה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="job" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">תפקיד המטמיע</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link" href="jobRequirements.html">דרישות תפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link active" href="pointOfViews.html">תפיסת תפקיד המטמיע</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="advantages" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">יתרונות בהטמעה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">יתרונות התפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link" href="success.html">סיפורי הצלחה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="preparation" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">הכנה לתפקיד</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link " href="fqa.html"> שאלות תשובות</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">פורום</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="interesting" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">מעוניין במשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">דרישות שכר</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">חיפוש משרה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="training" class="rounded-circle"> </div>
+                            <a href="#" class="NavHeadline">תהליך הכשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link notActive" href="#">תהליכי הכשרה</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+
+            </div>
+            <div><span class="arrow-margin_left"></span> <span class="arrow-margin_right"></span></div>
+
+        </header>
+
+
+        <div id="cont"class="backgroundForText topMargin ">
+            <nav class="breadcrumbs">
+                <ul>
+                    <li> <a href="index.html">דף הבית</a> </li>
+                    <li> <a href="" class="notActive"> תפקיד המטמיע</a></li>
+                    <li> <a href="pointOfViews.html"> תפיסת תפקיד המטמיע</a></li>
+                    <li>לקוח</li>
+                </ul>
+            </nav>
+
+            <div class="marginFromRight">
+                <h1>תפיסת תפקיד המטמיע</h1>
+                <p id="pointOfViewLobbySentence">
+                    לחץ על נקודת המבט שמעניינת אותך
+                </p>
+                <ul id="pointOfViewLobby">
+                    <li>
+                        <a href="managerPage.html" id="manager" class="pointOfViews_pic rounded-circle greyPointOfView little">מנהל</a>
+                    </li>
+                    <li>
+                        <a href="vatikPage.html" id="vatik" class="pointOfViews_pic rounded-circle greyPointOfView little">מטמיע ותיק</a>
+
+                    </li>
+                    <li>
+                        <a href="clientPage.html" id="customer" class="pointOfViews_pic rounded-circle  little">לקוח</a>
+                        <div class="arrow-down-PofView"></div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="board row activePov">
+                <div class="paper col-7">
+                    <section role="region">
+                        <h2 class="bestMAT">מיהו המטמיע הטוב ביותר עבורך?</h2>
+                        <p>
+                            "מטמיע צריך לדעת למה הוא נכנס- הטמעת מערכת מידע. הוא צריך להיות בעל תוכנית הדרכה מסודרת,
+                            מבין עניין במהירות, עומד במצבי לחץ ויודע להתמודד עם אנשים מורכבים אשר מתקשים עם המערכת ולא לוותר. מבחינה בינאישית - שיהיה סבלני ומכיל"
+
+                        </p>
+                    </section>
+
+                    <section role="region">
+                        <h2 class="characterMAT">מהן התכונות הנדרשות? </h2>
+                        <ul class="V_list">
+                            <li>קורא מצבים חברתיים</li>
+                            <li>מסודר ומאורגן</li>
+                            <li>רציני ויסודי</li>
+                            <li>יכולת הסברה טובה</li>
+                        </ul>
+                    </section>
+
+                    <section role="region">
+                        <h2 class="knowledgeMAT">האם נדרש ידע קודם? </h2>
+                        <p>
+                            <span class="boldText mark_No_yes"  aria-label="סומן כן">כן</span>/לא <br />
+                            נדרש שהמטמיע יגיע ללקוח כשהוא כבר מכיר את המערכת לאחר הכשרה
+                        </p>
+                        <img class="circle1" src="images/circle.png"  alt="סימון כן או לא" />
+                    </section>
+
+                </div>
+
+                <div class="col-4">
+                    <div class="picPeople">
+                        <img src="images/helib.jpeg" class="theImgOfPepole" alt="רחלי ישי ביטון" />
+                        <p class="name"> רחלי ישי ביטון</p>
+                    </div>
+
+                    <section role="region" id="rank_POF">
+                        <h2 class="rank">דירוג סדר החשיבות</h2>
+                        <div class="win win3">
+                            3 |
+                            <span class="boldText">שירותיות</span>
+                        </div>
+
+                        <div class="win win2">
+                            2 |
+                            <span class="boldText">מקצועיות</span>
+                        </div>
+
+                        <div class="win win1">
+                            1 |
+                            <span class="boldText">הדרכתיות</span>
+
+                        </div>
+                    </section role="region">
+                </div>
+
+            </div>
+
+
+            <div class="board row no-activePov">
+                <div class="paper col-7">
+                    <section role="region">
+                        <h2 class="bestMAT">מיהו המטמיע הטוב ביותר עבורך?</h2>
+                        <p>
+                            "מטמיע צריך להבין לאיזו סיטואציה הוא נכנס. בהתחלה הוא צריך לסייע בהתמודדות עם חבלי הלידה של המערכת. בנוסף, עליו להעביר את החומר בצורה ברורה וטובה ושיהיה מקצועי"
+
+                        </p>
+                    </section>
+
+                    <section role="region">
+                        <h2 class="characterMAT">מהן התכונות הנדרשות? </h2>
+                        <ul class="V_list">
+                            <li>יצירתיות</li>
+                            <li>הדרכתיות</li>
+                            <li>יחסי אנוש </li>
+                            <li>ביטחון עצמי</li>
+                        </ul>
+                    </section>
+
+                    <section role="region">
+                        <h2 class="knowledgeMAT">האם נדרש ידע קודם? </h2>
+                        <p>
+                            <span class="boldText mark_No_yes" aria-label="סומן כן">כן</span>/לא <br />
+                            צריך ידע קודם בתפעול בסיסי של המחשב
+                        </p>
+                        <img class="circle1" src="images/circle.png" alt="סימון כן או לא" />
+                    </section>
+
+                </div>
+
+                <div class="col-4">
+                    <div class="picPeople">
+                        <img src="images/yahel.jpeg" class="theImgOfPepole" alt="יהל מסורי" />
+                        <p class="name"> יהל מסורי</p>
+                    </div>
+
+                    <section role="region" id="rank_POF">
+                        <h2 class="rank">דירוג סדר החשיבות</h2>
+                        <div class="win win3">
+                            3 |
+                            <span class="boldText">שירותיות</span>
+                        </div>
+
+                        <div class="win win2">
+                            2 |
+                            <span class="boldText">הדרכתיות</span>
+                        </div>
+
+                        <div class="win win1">
+                            1 |
+                            <span class="boldText">מקצועיות</span>
+
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+            <div class="danielaJobReq"></div>
+            <div onclick="ChangeBoard(event)" class="speech-bubbleJobReq">
+                <p class="boldText">מעוניין בנקודת  <br />מבט <span>נוספת</span>?</p>
+            </div>
+        </div>
+    </div>
+    <div><span class="arrow-margin_left"></span> <span class="arrow-margin_right"></span></div>
+
+    <footer>
+        <div id="line" class="container"></div>
+        <div class="container">
+            <div class="row">
+                <div class=" col-3">
+                    <img id="footer_logo" src="images/logo.png" alt="תטמיע-לי, כל המידע למעוניינים במשרת הטמעה" />
+                    <p class="credit">@ מתן קרדיט זכויות יוצרים בעמוד <a href="about.html">אודות</a></p>
+                </div>
+                <nav aria-label="footer navigation" role="navigation" id="navFooter" class="col-9">
+                    <ul role="menubar" class="nav justify-content-around">
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">מערכות מידע</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">תחום מערכות מידע</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">מהי הטמעה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">תפקיד המטמיע</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link" href="jobRequirements.html">דרישות תפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link active" href="pointOfViews.html">תפיסת תפקיד המטמיע</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline"> יתרונות בהטמעה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">יתרונות התפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link" href="success.html">סיפורי הצלחה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">  הכנה לתפקיד</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link " href="fqa.html"> שאלות תשובות</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">פורום</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline"> מעוניין במשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">דרישות שכר</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">חיפוש משרה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">  תהליך הכשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">תהליכי הכשרה</a></li>
+                            </ul>
+                        </li>
+
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline"> על האתר</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link" href="contactUs.html">צור קשר</a></li>
+                                <li role="menuitem"><a class="nav-link" href="about.html">אודות</a></li>
+                                <li role="menuitem"><a class="nav-link" href="siteMap.html">מפת אתר</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

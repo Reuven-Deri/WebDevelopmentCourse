@@ -1,0 +1,454 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>תטמיע-לי דרישות תפקיד המטמיע</title>
+    <meta name="description" content="אספנו בשבילך את כל הדרישות המגוונות והפופולריות לתפקיד המטמיע מאתרי הדרושים השונים. " />
+    <meta name="keywords" content="הטמעה, הדרכה, משרות, תפקיד,דרישות תפקיד, חייל משוחרר, תואר ראשון, ניהול,מערכות מידע, משרות חמות, פיתוח הדרכה, מטמיע מערכות מידע, דרישות תפקיד מטמיע, יכולת עבודה עצמית, יכולת למידה עצמית, ידע במערכות office, אוריינטציה טכנולוגית, יכולת ניסוח,יכולת עבודה בצוות, גמישות ודינמיות, יחסי אנוש, סבלנות " />
+    <meta name="author" content="ראובן דרעי, הילה מן" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+          crossorigin="anonymous">
+
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="icon" href="Images/favicon.png">
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <h4 class="offscreen">תפריט נגישות</h4>
+        <ul class="skip">
+            <li><a accesskey="ד" href="#cont" class="skip">דלג לתוכן העמוד (מקש קיצור ד)</a></li>
+            <li><a accesskey="1" href="index.html" class="skip">עמוד הבית <span>(מקש קיצור 1)</span></a></li>
+            <li><a accesskey="5" href="#menu" class="skip">עבור לתפריט נושאים <span>(מקש קיצור 5)</span></a></li>
+            <li><a accesskey="3" href="siteMap.html" class="skip">מפת אתר <span>(מקש קיצור 3)</span></a></li>
+            <li><a accesskey="7" href="contactUs.html" class="skip">צור קשר <span>(מקש קיצור 7)</span></a></li>
+        </ul>
+    </div>
+    <div id="container" class="container lastContent">
+        <header>
+            <div class="row">
+                <div class="col-3">
+                </div>
+                <div class="col-6">
+                    <p>
+                        <a href="index.html" id="logoIndex">
+                            <img src="images/logo.png" alt="תטמיע-לי, כל המידע למעוניינים במשרת הטמעה. דף הבית" />
+                        </a>
+                    </p>
+                </div>
+                <div class="col-3">
+                    <nav aria-label="side navigation" role="navigation" id="upperNav">
+                        <ul role="menubar">
+                            <li role="menuitem" class="nav-item" onclick="ChangeColor(event)">
+                                <div id="accessibilityIcon" class="rounded-circle"> </div>
+                                נגישות
+                            </li>
+                            <li role="menuitem" class="nav-item">
+                                <a href="contactUs.html">
+                                    <div id="contactUsIcon" class="rounded-circle"> </div>
+                                    צור קשר
+                                </a>
+                            </li>
+                            <li role="menuitem" class="nav-item">
+                                <a href="about.html">
+                                    <div id="aboutIcon" class="rounded-circle"> </div>
+                                    אודות
+                                </a>
+                            </li>
+                            <li role="menuitem" class="nav-item">
+                                <a href="siteMap.html">
+                                    <div id="siteMapIcon" class="rounded-circle"> </div>
+                                    מפת אתר
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                </div>
+            </div>
+
+            <div id="menu" class="backgroundForText topMargin textPage">
+                <nav aria-label="main navigation" role="navigation">
+                    <ul role="menubar" class="nav justify-content-center">
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="infoSystem" class="rounded-circle"></div>
+                            <div id="infoA" class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">מערכות מידע</a>
+                            <ul role="menubar" class="nav" id="test">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#"> תחום מערכות מידע</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">מהי הטמעה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="job" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">תפקיד המטמיע</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link active" href="jobRequirements.html">דרישות תפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link" href="pointOfViews.html">תפיסת תפקיד המטמיע</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="advantages" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">יתרונות בהטמעה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">יתרונות התפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link" href="success.html">סיפורי הצלחה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="preparation" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">הכנה לתפקיד</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link " href="fqa.html"> שאלות תשובות</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">פורום</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="interesting" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">מעוניין במשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">דרישות שכר</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">חיפוש משרה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="training" class="rounded-circle"> </div>
+                            <a href="#" class="NavHeadline">תהליך הכשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link notActive" href="#">תהליכי הכשרה</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div><span class="arrow-margin_left"></span> <span class="arrow-margin_right"></span></div>
+
+        </header>
+
+        <div id="cont" class="backgroundForText  marginFromRight  topMarginJobReq">
+            <nav class="breadcrumbs">
+                <ul>
+                    <li> <a href="index.html">דף הבית</a> </li>
+                    <li> <a href="" class="notActive"> תפקיד המטמיע</a></li>
+                    <li>דרישות תפקיד</li>
+                </ul>
+            </nav>
+            <h1>דרישות תפקיד המטמיע</h1>
+            <p>
+                אספנו בשבילך את כל הדרישות המגוונות והפופולריות לתפקיד המטמיע מאתרי הדרושים השונים.  <br /><br />
+                בלחיצה על לחצן סימן השאלה (<span class="btn question MyBtn">?</span>)  תגלה כיצד הדרישה באה לידי ביטוי בתפקיד.  <br /><br />
+                <span class="boldText">
+                    סמן בכל דרישה האם
+                    <span class="btn i_have_it MyBtn">יש לי את זה!</span>                                                                                                                                   או
+                    <span class="btn i_dont_have_it MyBtn"> עדיין אין לי...</span>
+                    וגלה האם הינך מתאים לתפקיד.
+                </span>
+            </p>
+            <div id="accordion" class="pageTexture">
+                <div class="card">
+                    <!-- card 0 -->
+                    <section class="card-header mb-0 " id="headingOne" role="region">
+                        <div class="check_JobReq"> <i class="fas"></i></div>
+                        <h2 class="H2_JobReq col-3">יכולת עבודה עצמאית</h2>
+                        <button class="btn question MyBtn" data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapseOne"> ?</button>
+                        <span class="response_sentence col-7"></span>
+                    </section>
+
+                    <div id="collapse0" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                כמטמיע תדרש לדעת לעבוד באופן עצמאי מאחר וקיימות משרות רבות בהן תהיה נציג בודד של מערך ההטמעה. <br /> לכן, עליך להיות עצמאי בשטח ולהיות בעל יכולת קבלת החלטות עיקריות.
+                            </p>
+                            <div class="btn i_have_it MyBtn" onclick="HaveIt(event)" id="0_btnHI"> יש לי את זה!</div>
+                            <div class="btn i_dont_have_it MyBtn dhiCollapse" onclick="DontHaveIt(event)" id="0_btnDHI">עדיין אין לי... </div>
+                        </div>
+                    </div>
+
+                    <!-- card 1 -->
+                    <div class="card">
+                        <div class="card-header mb-0 " id="headingOne">
+                            <div class="check_JobReq"> <i class="fas" aria-label=""></i></div>
+                            <h2 class="H2_JobReq col-3">יכולת לימוד עצמית</h2>
+                            <button class="btn question MyBtn" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseOne"> ?</button>
+                            <span class="response_sentence col-7"></span>
+                        </div>
+
+                        <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    תפקיד המטמיע דורש יכולת למידה עצמאית מאחר וקיימות משרות בהן למרות שלא תעבור קורס הכשרה תידרש ללמוד באופן עצמאי את: תפעול המערכת, התהליך העסקי ואופן מימושו במערכת.
+                                </p>
+                                <div class="btn i_have_it MyBtn" onclick="HaveIt(event)" id="1_btnHI"> יש לי את זה!</div>
+                                <div class="btn i_dont_have_it MyBtn dhiCollapse" onclick="DontHaveIt(event)" id="1_btnDHI">עדיין אין לי... </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card">
+                        <div class="card-header mb-0" id="headingOne">
+                            <div class="check_JobReq"> <i class="fas"></i></div>
+                            <h2 class="H2_JobReq col-3">ידע במערכות Office  </h2>
+                            <button class="btn question MyBtn" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseOne"> ?</button>
+                            <span class="response_sentence col-7"></span>
+                        </div>
+
+                        <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    שליטה בתוכנות ה-Office היא אחת מהדרישות הנפוצות בכל משרה ככלל ובמשרת המטמיע בפרט. מערכות מידע רבות נעזרות בתוכנות אלו ככלי עזר לייצוא דוחות ומכתבים לתוכנות ה-Excel וה-Word (בהתאמה) ולעיתים תידרש להסביר גם על תפעול מערכות אלו.
+                                </p>
+                                <div class="btn i_have_it MyBtn" onclick="HaveIt(event)" id="2_btnHI"> יש לי את זה!</div>
+                                <div class="btn i_dont_have_it MyBtn dhiCollapse" onclick="DontHaveIt(event)" id="2_btnDHI">עדיין אין לי... </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="card">
+                        <div class="card-header mb-0" id="headingOne">
+                            <div class="check_JobReq"> <i class="fas"></i></div>
+                            <h2 class="H2_JobReq col-3">אוריינטציה טכנולוגית</h2>
+                            <button class="btn question MyBtn" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseOne"> ?</button>
+                            <span class="response_sentence col-7"></span>
+                        </div>
+
+                        <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    כחלק מתפקידך כמטמיע תדרש להיות בעל אוריינטציה טכנולוגית גבוהה (יכולת תפעול בסיסית של מחשב), זאת מאחר וכחלק מהטמעת מערכת מידע בארגון, תתקל בקשיים שאינם קשורים למערכת אלא לתפעול המחשב או לתקשורת הנתונים.
+                                </p>
+                                <div class="btn i_have_it MyBtn" onclick="HaveIt(event)" id="3_btnHI"> יש לי את זה!</div>
+                                <div class="btn i_dont_have_it MyBtn dhiCollapse" onclick="DontHaveIt(event)" id="3_btnDHI">עדיין אין לי... </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="card">
+                        <div class="card-header mb-0" id="headingOne">
+                            <div class="check_JobReq"> <i class="fas"></i></div>
+                            <h2 class="H2_JobReq col-3"> יכולת ניסוח  </h2>
+                            <button class="btn question MyBtn" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseOne"> ?</button>
+                            <span class="response_sentence col-7"></span>
+                        </div>
+
+                        <div id="collapse4" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    מהות התפקיד היא ללמד את הלקוח כיצד להשתמש במערכת החדשה, לימוד המתבצע לרוב באמצעות הסברים מילוליים. לכן, עליך להיות בעל יכולת ביטוי ברורה ורהוטה – בחר את המילים הנכונות והתאם אותן לאופי ולהתנהלות הלקוח.
+                                    יכולת ניסוח היא אחת הדרישות המהותיות בתפקיד – הטמעה טובה מובילה למקצועיות גבוהה.
+                                </p>
+                                <div class="btn i_have_it MyBtn" onclick="HaveIt(event)" id="4_btnHI"> יש לי את זה!</div>
+                                <div class="btn i_dont_have_it MyBtn dhiCollapse" onclick="DontHaveIt(event)" id="4_btnDHI">עדיין אין לי... </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="card">
+                        <div class="card-header mb-0" id="headingOne">
+                            <div class="check_JobReq"> <i class="fas"></i></div>
+                            <h2 class="H2_JobReq col-3"> יכולת עבודה בצוות</h2>
+                            <button class="btn question MyBtn" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapseOne"> ?</button>
+                            <span class="response_sentence col-7"></span>
+                        </div>
+
+                        <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+
+                                    ישנה חשיבות רבה לאחידות הצוות הן ברמה המקצועית והן ברמה האישית.<br />
+                                    כאשר המטמיעים בצוות עובדים בשילוב, הם מקדמים את רמת המקצועיות הצוותית ע"י שיתוף הסיטואציות והשאלות בהן נתקלו במהלך יום העבודה.<br />בנוסף, עבודה בצוות תיצור עבורך אווירת עבודה לימודית ומהנה.
+                                    <br /><br /> יש לזכור כי על מערך ההטמעה להיות גוף אחד מייצג עבור הלקוח.
+                                </p>
+                                <div class="btn i_have_it MyBtn" onclick="HaveIt(event)" id="5_btnHI"> יש לי את זה!</div>
+                                <div class="btn i_dont_have_it MyBtn dhiCollapse" onclick="DontHaveIt(event)" id="5_btnDHI">עדיין אין לי... </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="card">
+                        <div class="card-header mb-0" id="headingOne">
+                            <div class="check_JobReq"> <i class="fas"></i></div>
+                            <h2 class="H2_JobReq col-3"> גמישות ודינמיות  </h2>
+                            <button class="btn question MyBtn" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapseOne"> ?</button>
+                            <span class="response_sentence col-7"></span>
+                        </div>
+
+                        <div id="collapse6" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    ראשית, קיימות משרות בהן תידרש כמטמיע להתנייד במקומות שונים בארץ. תפקיד שידרוש ממך גמישות ודינמיות מבחינת הנסיעות ממקום למקום, לפעמים אף מספר פעמים ביום.
+                                    <br />שנית, גמישות יכולה גם להתאפיין בסדר היום שלך כמטמיע, סדר יום מגוון ודינמי הבא לידי ביטוי בשוני מספר המודרכים, במספר המשימות השונות ובמורכבותן.
+                                </p>
+                                <div class="btn i_have_it MyBtn" onclick="HaveIt(event)" id="6_btnHI"> יש לי את זה!</div>
+                                <div class="btn i_dont_have_it MyBtn dhiCollapse" onclick="DontHaveIt(event)" id="6_btnDHI">עדיין אין לי... </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 7 -->
+                    <div class="card">
+                        <div class="card-header mb-0" id="headingOne">
+                            <div class="check_JobReq"> <i class="fas"></i></div>
+                            <h2 class="H2_JobReq col-3"> יחסי אנוש</h2>
+                            <button class="btn question MyBtn" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapseOne"> ?</button>
+                            <span class="response_sentence col-7"></span>
+                        </div>
+
+                        <div id="collapse7" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    עליך להבין כי כניסת מערכת מידע חדשה לתוך ארגון הוא תהליך לא פשוט ולפעמים גם ארוך, לכן ישנה חשיבות לפן הבין-אישי שלך בתור מטמיע אל מול הלקוח. הגדרת הדגל של התפקיד היא יחסי אנוש.
+                                    <br /><br />תפקיד המטמיע הוא תפקיד הדרכתי מצד אחד ופסיכולוגי מהצד השני.
+                                </p>
+                                <div class="btn i_have_it MyBtn" onclick="HaveIt(event)" id="7_btnHI"> יש לי את זה!</div>
+                                <div class="btn i_dont_have_it MyBtn dhiCollapse" onclick="DontHaveIt(event)" id="7_btnDHI">עדיין אין לי... </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 8 -->
+                    <div class="card">
+                        <div class="card-header mb-0" id="headingOne">
+                            <div class="check_JobReq"> <i class="fas"></i></div>
+                            <h2 class="H2_JobReq col-3">  אחריות</h2>
+                            <button class="btn question MyBtn" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapseOne"> ?</button>
+                            <span class="response_sentence col-7"></span>
+                        </div>
+
+                        <div id="collapse8" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    כמטמיע, אתה הגורם העיקרי הבא בממשק עם הלקוח והגורם שמייצג את המערכת (גם אם אינך מעורב בפיתוחה). לכן, משקל רב על כתפיך, עליך "למכור" ולשווק את המערכת תוך כדי הלימוד. עליך להיות  אחראי ולדעת את החומר בצורה הטובה והמקצועית ביותר.
+                                </p>
+                                <div class="btn i_have_it MyBtn" onclick="HaveIt(event)" id="8_btnHI"> יש לי את זה!</div>
+                                <div class="btn i_dont_have_it MyBtn dhiCollapse" onclick="DontHaveIt(event)" id="8_btnDHI">עדיין אין לי... </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 9 -->
+                    <div class="card">
+                        <div class="card-header mb-0" id="headingOne">
+                            <div class="check_JobReq"> <i class="fas"></i></div>
+                            <h2 class="H2_JobReq col-3">  סבלנות</h2>
+                            <button class="btn question MyBtn" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapseOne"> ?</button>
+                            <span class="response_sentence col-7"></span>
+                        </div>
+
+                        <div id="collapse9" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    במסגרת התפקיד כמטמיע תפגוש סוגים שונים של עובדים. העובד ה-"טכנולוגי" (המסתגל מהר למערכת), עובדים "ותיקים" (המתקשים יותר מהרגיל עם כניסת המערכת חדשה) ועובדים "מתנגדים" (לא מוכנים להכיר בשינוי).
+                                    עליך להיות סבלני בתור מטמיע ולדעת להכיל ולהתמודד עם כל לקוח שתפגוש.
+                                </p>
+                                <div class="btn i_have_it MyBtn" onclick="HaveIt(event)" id="9_btnHI"> יש לי את זה!</div>
+                                <div class="btn i_dont_have_it MyBtn dhiCollapse" onclick="DontHaveIt(event)" id="9_btnDHI">עדיין אין לי... </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div><span class="arrow-margin_left"></span> <span class="arrow-margin_right"></span></div>
+        <div class="danielaJobReq2"></div>
+        <div class="speech-bubbleJobReq2">
+            <p class="boldText">
+                יש לך את זה?  <br />
+                ממליצה לך לצפות בעמוד
+                <br /><a href="fqa.html">שאלות ותשובות</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div id="line" class="container"></div>
+        <div class="container">
+            <div class="row">
+                <div class=" col-3">
+                    <img id="footer_logo" src="images/logo.png" alt="תטמיע-לי, כל המידע למעוניינים במשרת הטמעה" />
+                    <p class="credit">@ מתן קרדיט זכויות יוצרים בעמוד <a href="about.html">אודות</a></p>
+                </div>
+                <nav aria-label="footer navigation" role="navigation" id="navFooter" class="col-9">
+                    <ul role="menubar" class="nav justify-content-around">
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">מערכות מידע</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">תחום מערכות מידע</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">מהי הטמעה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">תפקיד המטמיע</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link active" href="jobRequirements.html">דרישות תפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link" href="pointOfViews.html">תפיסת תפקיד המטמיע</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline"> יתרונות בהטמעה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">יתרונות התפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link" href="success.html">סיפורי הצלחה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">  הכנה לתפקיד</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link " href="fqa.html"> שאלות תשובות</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">פורום</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline"> מעוניין במשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">דרישות שכר</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">חיפוש משרה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">  תהליך הכשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">תהליכי הכשרה</a></li>
+                            </ul>
+                        </li>
+
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline"> על האתר</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link" href="contactUs.html">צור קשר</a></li>
+                                <li role="menuitem"><a class="nav-link" href="about.html">אודות</a></li>
+                                <li role="menuitem"><a class="nav-link" href="siteMap.html">מפת אתר</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

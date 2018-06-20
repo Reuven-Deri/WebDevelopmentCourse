@@ -1,0 +1,461 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>תטמיע-לי שאלות ותשובות</title>
+    <meta name="description" content="עמוד שאלות ותשובות באתר תטמיע-לי, על מנת לעזור לך לקבל את ההחלטה המתאימה ביותר ובכדי שתגיע מוכן לראיון העבודה אספנו בשבילך את כל השאלות הפופולריות בנוגע לתפקיד. " />
+    <meta name="keywords" content=" תטמיע לי, הטמעה, הדרכה, שאלות ותשובות, שאלות נפוצות,  " />
+    <meta name="author" content="ראובן דרעי, הילה מן" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="icon" href="Images/favicon.png">
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="https://webdevelopmentcourse.github.io/contactUs/WebDevelopmentCourse/jScripts/contactUs.js" type="text/javascript"></script>
+
+</head>
+<body onload="fqaQ()">
+    <div id="wrapper">
+        <h4 class="offscreen">תפריט נגישות</h4>
+        <ul class="skip">
+            <li><a accesskey="ד" href="#fqa_page" class="skip">דלג לתוכן העמוד (מקש קיצור ד)</a></li>
+            <li><a accesskey="1" href="index.html" class="skip">עמוד הבית <span>(מקש קיצור 1)</span></a></li>
+            <li><a accesskey="5" href="#menu" class="skip">עבור לתפריט נושאים <span>(מקש קיצור 5)</span></a></li>
+            <li><a accesskey="3" href="siteMap.html" class="skip">מפת אתר <span>(מקש קיצור 3)</span></a></li>
+            <li><a accesskey="7" href="contactUs.html" class="skip">צור קשר <span>(מקש קיצור 7)</span></a></li>
+        </ul>
+    </div>
+    <div id="container" class="container lastContent">
+        <header>
+            <div class="row">
+                <div class="col-3">
+                </div>
+                <div class="col-6">
+                    <h1>
+                        <a href="index.html" id="logoIndex">
+                            <img src="images/logo.png" alt="תטמיע-לי, כל המידע למעוניינים במשרת הטמעה. דף הבית" />
+                        </a>
+                    </h1>
+                </div>
+                <div class="col-3">
+                    <nav aria-label="side navigation" role="navigation" id="upperNav">
+                        <ul role="menubar">
+                            <li role="menuitem" class="nav-item" onclick="ChangeColor(event)">
+                                <div id="accessibilityIcon" class="rounded-circle"> </div>
+                                נגישות
+                            </li>
+                            <li role="menuitem" class="nav-item">
+                                <a href="contactUs.html">
+                                    <div id="contactUsIcon" class="rounded-circle"> </div>
+                                    צור קשר
+                                </a>
+                            </li>
+                            <li role="menuitem" class="nav-item">
+                                <a href="about.html">
+                                    <div id="aboutIcon" class="rounded-circle"> </div>
+                                    אודות
+                                </a>
+                            </li>
+                            <li role="menuitem" class="nav-item">
+                                <a href="siteMap.html">
+                                    <div id="siteMapIcon" class="rounded-circle"> </div>
+                                    מפת אתר
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+
+                </div>
+            </div>
+
+            <div id="menu" class="backgroundForText topMargin textPage">
+                <nav aria-label="main navigation" role="navigation">
+                    <ul role="menubar" class="nav justify-content-center">
+                        <!-- OnClick בשביל הנגישות ששם אין מעבר עכבר   -->
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="infoSystem" class="rounded-circle"></div>
+                            <div id="infoA" class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">מערכות מידע</a>
+                            <ul role="menubar" class="nav" id="test">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#"> תחום מערכות מידע</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">מהי הטמעה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="job" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">תפקיד המטמיע</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link" href="jobRequirements.html">דרישות תפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link" href="pointOfViews.html">תפיסת תפקיד המטמיע</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="advantages" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">יתרונות בהטמעה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">יתרונות התפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link" href="success.html">סיפורי הצלחה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="preparation" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">הכנה לתפקיד</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link active " href="fqa.html"> שאלות תשובות</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">פורום</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="interesting" class="rounded-circle"> </div>
+                            <div class="arrow-left"></div>
+                            <a href="#" class="NavHeadline">מעוניין במשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">דרישות שכר</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">חיפוש משרה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" onmouseover="ArrowDownMenu(event)" onmouseout="ArrowLeftMenu(event)">
+                            <div id="training" class="rounded-circle"> </div>
+                            <a href="#" class="NavHeadline">תהליך הכשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link notActive" href="#">תהליכי הכשרה</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+
+
+
+
+            </div>
+            <div><span class="arrow-margin_left"></span> <span class="arrow-margin_right"></span></div>
+
+        </header>
+
+
+        <div id="fqa_page" class="backgroundForText  marginFromRight  topMargin">
+            <nav class="breadcrumbs">
+                <ul>
+                    <li> <a href="index.html">דף הבית</a> </li>
+                    <li> <a href="" class="notActive"> הכנה לתפקיד</a></li>
+                    <li>שאלות ותשובות</li>
+                </ul>
+            </nav>
+            <h1>שאלות ותשובות</h1>
+            <p>
+                על מנת לעזור לך לקבל את ההחלטה המתאימה ביותר ובכדי שתגיע מוכן לראיון העבודה
+                <br />אספנו בשבילך את כל השאלות הפופולריות בנוגע לתפקיד.
+                <span class="boldText">
+                    <br /><br /> לחץ על לחצן ה-
+                    <span class="btn plus MyBtn">+</span>
+                    בכדי לצפות בתשובה לשאלה ועל לחצן ה-
+                    <span class="btn minus MyBtn">-</span>
+                    לסגירתה.
+                </span>
+            </p>
+
+            <button id="openAll" onclick="OpenAll(event)" class="btn plus MyBtn" aria-label="פתח / סגול הכל">▼ פתח הכל</button>
+            <div id="accordion">
+                <!-- card 0 -->
+                <div class="card fqaCard">
+                    <div class="card-header mb-0 " id="headingOne">
+                        <button class="btn plus MyBtn"  id="0btn" onclick="FqaBtn(event)" data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapseOne" aria-label="לחצן פתיחת / סגירת התשובה לשאלה"> +</button>
+                        <h2 class="H2_JobReq col-10 ">מהו השכר ההתחלתי?  </h2>
+                    </div>
+
+                    <div id="collapse0" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                כמו בכל משרה גם בתחום זה השכר מושפע ממספר פרמטרים כגון: ניסיון קודם ותארים רלוונטיים. על פי סקר שוק השכר ההתחלתי הממוצע לגברים ונשים יחדיו עומד על 6,400 למשרה מלאה. בנוסף, לאחר צבירת ניסיון של בין שנתיים ל-4 שנים, השכר הממוצע בתפקיד עומד על 7,800.
+                                <br /><br />לצפייה במידע נוסף אודות טבלאות שכר <a href="#" class="notActive">לחץ כאן</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 1 -->
+                <div class="card fqaCard">
+                    <div class="card-header mb-0 " id="headingOne">
+                        <button class="btn plus MyBtn" id="1btn" onclick="FqaBtn(event)" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseOne"aria-label="לחצן פתיחת / סגירת התשובה לשאלה"> +</button>
+                        <h2 class="H2_JobReq col-10 ">מהו השכר ההתחלתי?  </h2>
+
+                        <h2 class="H2_JobReq col-10 ">האם נדרש ניסיון קודם? אם כן, איזה?  </h2>
+                    </div>
+
+                    <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                הדרישה לניסיון קודם משתנה בין משרה למשרה, ישנן משרות הדורשות ניסיון קודם במערכות מסוימות (CRM, ERP, SAP) אך עם זאת, קיימות משרות רבות בשוק אשר לא דורשות ידע קודם מאחר והן דואגות ללמד את הידע הנדרש בתחילת התפקיד כחלק מתהליך ההכשרה.
+                                <br /><br /> לצפייה בתהליכי ההכשרה השונים <a href="#" class="notActive">לחץ כאן</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card fqaCard">
+                    <div class="card-header mb-0 " id="headingOne">
+                        <button class="btn plus MyBtn" id="2btn" onclick="FqaBtn(event)" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseOne" aria-label="לחצן פתיחת / סגירת התשובה לשאלה"> +</button>
+                        <h2 class="H2_JobReq col-10 ">מהו השכר ההתחלתי?  </h2>
+
+                        <h2 class="H2_JobReq col-10 ">מהן שעות העבודה הממוצעות?</h2>
+                    </div>
+
+                    <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                שעות העבודה הן שונות ומגוונות.<br />
+                                ישנן משרות בהן שעות העבודה הן סטנדרטיות: 8:00-17:00. מאחר וההטמעה מתבצעת על האנשים בארגון, המטמיע מתנהל בהתאם לשעות פעילות של הארגון. עם זאת, ישנם ארגונים בעלי שעות עבודה לא שגרתיות (בתי חולים) שבהם שעות הפעילות בעבודה הן 24/7.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card fqaCard">
+                    <div class="card-header mb-0 " id="headingOne">
+                        <button class="btn plus MyBtn" id="3btn" onclick="FqaBtn(event)" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseOne"  aria-label="לחצן פתיחת / סגירת התשובה לשאלה"> +</button>
+                        <h2 class="H2_JobReq col-10 ">מהו השכר ההתחלתי?  </h2>
+
+                        <h2 class="H2_JobReq col-10 ">האם המשרה מתאימה לסטודנטים?</h2>
+                    </div>
+
+                    <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                ע"פ סקר שוק קיימות משרות המתאימות לסטודנטים בעיקר בבתי חולים, שם העובדים נמצאים 24/7 ולכן העבודה היא במשמרות אשר מאפשרים את הגמישות לסטודנט הלומד.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card fqaCard">
+                    <div class="card-header mb-0  " id="headingOne">
+                        <button class="btn plus MyBtn" id="4btn" onclick="FqaBtn(event)" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseOne" aria-label="לחצן פתיחת / סגירת התשובה לשאלה"> +</button>
+                        <h2 class="H2_JobReq col-10 ">מהו השכר ההתחלתי?  </h2>
+
+                        <h2 class="H2_JobReq col-10 ">מהי השגרה היום-יומית במשרה?</h2>
+                    </div>
+
+                    <div id="collapse4" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                השגרה היום-יומית משתנה בין המשרות השונות, אך לכולן מכנה משותף אחד והוא שגרת העבודה של הארגון בו המטמיע נמצא. כחלק מתפקיד המטמיע הוא צריך להסתובב בין העובדים הזקוקים להטמעה ולעזרה במערכת, במהלך היום יכולות לעלות שאלות מקצועיות מהעובדים- על המטמיע למצוא להם את התשובות.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div class="card fqaCard">
+                    <div class="card-header mb-0 " id="headingOne">
+                        <button class="btn plus MyBtn" id="5btn" onclick="FqaBtn(event)" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapseOne" aria-label="לחצן פתיחת / סגירת התשובה לשאלה"> +</button>
+                        <h2 class="H2_JobReq col-10 ">מהו השכר ההתחלתי?  </h2>
+
+                        <h2 class="H2_JobReq col-10 ">מי הם סוגי הלקוחות שאוכל להיתקל בהם?</h2>
+                    </div>
+
+                    <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                סוגי המשתמשים הינם רבים ומגוונים אך ניתן לחלק אותם למספר קטגוריות:
+                            </p>
+                            <ol class="fqa_ol">
+                                <li>
+                                    <span class="boldText">העובד "הטכנולוגי" -</span> מאופיין בגישה הטכנולוגית, בעל ידע בהפעלת מחשב והיכרות עם תוכנות שונות.
+                                    <ul class="advantages_and_disadvantages">
+                                        <li><span class="list-group-item-success boldText">+ יתרון:</span>  תהליך ההטמעה שלו יהיה קצר ומהיר. </li>
+                                        <li><span class="list-group-item-danger boldText">- חיסרון:</span>  מקצועיות (השאלות שהוא ישאל יהיו ברמה גבוהה יותר, לכן על המטמיע להיות בקיא יותר).</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="boldText">העובד "המתנגד" -</span> מדובר בעובד שהתרגל למערכת הישנה ומסרב לקבל את החלפת המערכת.<br />הדבר יכול לנבוע מפחד משינויים או מחוסר בשלות של המערכת עצמה.
+                                    <ul class="advantages_and_disadvantages">
+                                        <li><span class="list-group-item-success boldText">+ יתרון:</span>  מהווה אתגר למטמיע אך קושי זה הופך למטמיע מקצועי. </li>
+                                        <li><span class="list-group-item-danger boldText">- חיסרון:</span>  קושי בהתמודדות הבין אישית.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="boldText">העובד "הלא טכנולוגי" -</span> מדובר בעובד ששפת המחשב זרה לו, הוא יודע רק דברים בסיסיים שקשורים למחשב ולכן לא מוכן להשתמש בו.
+                                    <ul class="advantages_and_disadvantages">
+                                        <li><span class="list-group-item-success boldText">+ יתרון:</span>  שיפור היכולות הבין אישיות של המטמיע.  </li>
+                                        <li><span class="list-group-item-danger boldText">- חיסרון:</span>  הכנת העובד לתפקיד תהיה ארוכה יותר.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 6 -->
+                <div class="card fqaCard">
+                    <div class="card-header mb-0 " id="headingOne">
+                        <button class="btn plus MyBtn" id="6btn" onclick="FqaBtn(event)" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapseOne"aria-label="לחצן פתיחת / סגירת התשובה לשאלה"> +</button>
+                        <h2 class="H2_JobReq col-10 ">מהו השכר ההתחלתי?  </h2>
+
+                        <h2 class="H2_JobReq col-10 ">סיטואציה פופולרית: <br /> שבוע שני לעבודה, כולם מזלזלים בי ורוצים רק שמטמיע ותיק יטמיע להם, מה אני יכול לעשות?</h2>
+                    </div>
+
+                    <div id="collapse6" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                תחילה, כדאי לגשת למטמיע הוותיק ולשתף אותו בתחושות ולבקש להיצמד אליו לאורך ההטמעות על מנת לרכוש ממנו ידע. בהטמעה עצמה המטמיע הוותיק יכול לתת לך את האפשרות להתבטא ובנוסף הוא משרה ביטחון גם עליך וגם על המשתמש ויכול לתת דגשים חשובים כשצריך.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 7 -->
+                <div class="card fqaCard">
+                    <section class="card-header mb-0 " id="headingOne" role="region">
+                        <button class="btn plus MyBtn" id="7btn" onclick="FqaBtn(event)" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapseOne" aria-label="לחצן פתיחת / סגירת התשובה לשאלה"> +</button>
+                        <h2 class="H2_JobReq col-10 ">מהו השכר ההתחלתי?  </h2>
+
+                        <h2 class="H2_JobReq col-10 ">סיטואציה פופולרית: <br /> התבקשת להטמיע משתמש שכל הזמן דוחה אותך כל פעם בתירוץ אחר ואומר "אין לי זמן.. תבוא מחר" – כיצד תתמודד עם הסיטואציה?</h2>
+                    </section>
+
+                    <div id="collapse7" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                במקרים אלו לרוב כדאי ללכת לקראתו ובו זמנית לנסות להתקרב אליו על ידי כנות. אנו מציעים להגיד לו כי "אני יודע כמה אתה עמוס בעבודה ואין לך זמן בשביל הטמעה אבל בוא נקבע להיום זה בסך הכול עשרים דקות- חצי שעה כשנוח לך כי בסוף באמת תצטרך את זה וחבל שלא תדע".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 8 -->
+                <div class="card fqaCard">
+                    <div class="card-header mb-0 center-block" id="headingOne">
+                        <button class="btn plus MyBtn" id="8btn" onclick="FqaBtn(event)" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapseOne" aria-label="לחצן פתיחת / סגירת התשובה לשאלה"> +</button>
+                        <h2 class="H2_JobReq col-10 ">מהו השכר ההתחלתי?  </h2>
+                        <h2 class="H2_JobReq col-10 ">סיטואציה פופולרית: <br /> משתמש לא מבין את דבריך למרות שהסברת לו את הנושא כבר מספר רב של פעמים, מה עוד אוכל לעשות?</h2>
+                    </div>
+
+                    <div id="collapse8" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                חשוב להבין כי כל משתמש לומד בצורה אחרת ולכן עליך לבצע התאמה לאותו משתמש על מנת למצוא את הדרך המתאימה לו ביותר להבנה.<br /> אילו שיטות למידה יכולות לסייע?
+                            </p>
+                            <ol class="fqa_ol">
+                                <li>יצירת תרשים זרימה ביחד עם המשתמש- מתאים לאנשים שמבינים בדרך של תהליך.</li>
+                                <li>הכנת דף תהליכים- יכול לסייע במצב בו המשתמש צריך לבצע פעולות תהליכיות, על מנת שיוכל לוודא שהוא ביצע את כל השלבים ניתן לעזור לו ביצירת דף תהליך המכיל את כל השלבים הנדרשים.</li>
+                                <li>הדפסת חומרי הדרכה קיימים- להביא למשתמש חומרי הדרכה המכילים את כל הפירוט הנדרש לביצוע התהליך. </li>
+                                <li>לבקש מהמשתמש שיכתוב במחברת בעצמו את השלבים, בדרך כלל תוך כדי כתיבה החומר נכנס לראש בצורה טובה יותר. </li>
+                            </ol>
+                            <p class="boldText">חשוב להבין שמה שמתאים למשתמש אחד לא מתאים למשתמש אחר.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>                <!-- accordion -->
+
+
+            <div class="triangle-isosceles">
+                <h3 class="boldText">שאלה ללא מענה?</h3>
+                <p>הקלד כאן את שאלתך ומבטיחים לענות במהרה!</p>
+                <form id="fqa_form">
+                    <input type="hidden" id="myEmail" name="name" value="hila44410@gamil.com">
+                    <label for="comment" class="boldText">
+                        הודעה:
+                        <textarea class="form-control" rows="5" id="comment" placeholder="הקלד כאן את שאלתך....."></textarea>
+                    </label>
+
+                    <label for="yourEmailFqa">
+                        <span class="boldText"> כתובת דוא"ל:</span> <br />
+                        הקלד את כתובת הדוא"ל שלך על מנת שנוכל לעדכן אותך בתשובה!
+                        <input type="email" id="yourEmailFqa" name="name" placeholder="הקלד כאן את כתובת הדוא'ל שלך.....">
+                    </label>
+
+                    <input type="submit" id="Send" value="שלח" class="btn send MyBtn">
+                    <div id="feedback"></div>
+
+                </form>
+            </div>
+            <div class="danielaFqa"></div>
+
+        </div>
+        <div><span class="arrow-margin_left"></span> <span class="arrow-margin_right"></span></div>
+    </div>
+
+    <footer>
+        <div id="line" class="container"></div>
+        <div class="container">
+            <div class="row">
+                <div class=" col-3">
+                    <img id="footer_logo" src="images/logo.png" alt="תטמיע-לי, כל המידע למעוניינים במשרת הטמעה" />
+                    <p class="credit">@ מתן קרדיט זכויות יוצרים בעמוד <a href="about.html">אודות</a></p>
+                </div>
+                <nav aria-label="footer navigation" role="navigation" id="navFooter" class="col-9">
+                    <ul role="menubar" class="nav justify-content-around">
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">מערכות מידע</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">תחום מערכות מידע</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">מהי הטמעה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">תפקיד המטמיע</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link" href="jobRequirements.html">דרישות תפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link" href="pointOfViews.html">תפיסת תפקיד המטמיע</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline"> יתרונות בהטמעה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">יתרונות התפקיד</a></li>
+                                <li role="menuitem"><a class="nav-link" href="success.html">סיפורי הצלחה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">  הכנה לתפקיד</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link active " href="fqa.html"> שאלות תשובות</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">פורום</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline"> מעוניין במשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">דרישות שכר</a></li>
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">חיפוש משרה</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline">  תהליך הכשרה</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link  notActive" href="#">תהליכי הכשרה</a></li>
+                            </ul>
+                        </li>
+
+                        <li role="menuitem">
+                            <a href="#" class="FooterHeadline"> על האתר</a>
+                            <ul role="menubar" class="nav">
+                                <li role="menuitem"><a class="nav-link" href="contactUs.html">צור קשר</a></li>
+                                <li role="menuitem"><a class="nav-link" href="about.html">אודות</a></li>
+                                <li role="menuitem"><a class="nav-link" href="siteMap.html">מפת אתר</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
